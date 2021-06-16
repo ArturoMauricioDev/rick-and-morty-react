@@ -1,0 +1,24 @@
+.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-episode {
+  border: 1px solid transparent;
+  margin-bottom: 8px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-episode__info {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.name-episode {
+  font-weight: 800;
+}

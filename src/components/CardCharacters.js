@@ -1,8 +1,8 @@
 import React from "react";
 import { FaTwitter } from "react-icons/fa";
-import "./styles/Card.css";
+import "./styles/CardCharacters.css";
 
-export default function Card(props) {
+export default function CardCharacters(props) {
   return (
     <ul className="list-unstyled">
       {props.items.map((item) => {

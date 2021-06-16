@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header'
-import CardCharacters from '../components/CardCharacters'
-import Footer from '../components/Footer'
+import CardLocation from '../components/CardLocation'
+
 
 
 export default function Characters() {
@@ -10,7 +9,7 @@ export default function Characters() {
     })
     const [hasError, setError] = useState(false)
     const fetchCharacter = async () => {
-        const response = await fetch('https://rickandmortyapi.com/api/character?page=1')
+        const response = await fetch('https://rickandmortyapi.com/api/location?page=1')
         response
             .json()
             .then(response => setData(response))
@@ -23,9 +22,9 @@ export default function Characters() {
     console.log(data.results)
     return (
         <div>
-            <Header />
-            <CardCharacters items={data.results} />
-            <Footer />
+
+            <CardLocation items={data.results} />
+
 
         </div>
     )
